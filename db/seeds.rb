@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+puts "Obteniendo 10 imagenes"
+
+10.times do |i|
+    Image.create(url_image: Faker::Avatar.image)
+end
+
+
